@@ -5,7 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.BaseDriverClass;
+import Utils.BaseDriverClass;
 
 public class BuyProductsPage extends BaseDriverClass {
 
@@ -21,8 +21,8 @@ public class BuyProductsPage extends BaseDriverClass {
     @FindBy(xpath = "(//button[contains(@aria-label,'Agregar')])[6]")
     WebElement btnAdd2;
 
-    @FindBy(xpath = "(//button[@aria-label='Agregar'])[21]")
-    WebElement btnAdd3;
+    /*@FindBy(xpath = "(//button[@aria-label='Agregar'])[21]")
+    WebElement btnAdd3;*/
 
     @FindBy(xpath = "//i[@class='jumbo-icon-shopping-cart']")
     WebElement btnAddCart;
@@ -67,12 +67,12 @@ public class BuyProductsPage extends BaseDriverClass {
         btnAdd2.click();
     }
 
-    public void clickAddProduct3() {
+    /*public void clickAddProduct3() {
         scrollToElement(btnAdd3);
         btnAdd3.click();
 
     }
-
+*/
     public void clickBtnCart(){
         btnAddCart.click();
     }

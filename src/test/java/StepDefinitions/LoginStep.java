@@ -1,4 +1,4 @@
-package definitions;
+package StepDefinitions;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,11 +12,11 @@ import pages.LoginPage;
 
 import java.time.Duration;
 
-public class LoginDefinition {
+public class LoginStep {
     private final LoginPage loginPage;
 	private final HomePage homePage;
 	
-	public LoginDefinition() throws Exception {
+	public LoginStep() throws Exception {
         WebDriver driver = Hooks.driver;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		loginPage = new LoginPage(driver, wait);

@@ -1,4 +1,4 @@
-package definitions;
+package StepDefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -10,11 +10,11 @@ import pages.BuyProductsPage;
 
 import java.time.Duration;
 
-public class BuyProductsDefinition {
+public class BuyProductsStep {
 
     private final BuyProductsPage buyProductsPage;
 
-    public BuyProductsDefinition() throws Exception {
+    public BuyProductsStep() throws Exception {
         WebDriver driver = Hooks.driver;
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         buyProductsPage = new BuyProductsPage(driver, wait);
@@ -35,8 +35,8 @@ public class BuyProductsDefinition {
     @And("Click on: Kotex ultra fine towels")
     public void clickAddProduct2() {buyProductsPage.clickAddProduct2();}
 
-    @And("Click on: Toallas Higiénicas Ladysoft Básicas Sin Alas")
-    public void clickAddProduct3() {buyProductsPage.clickAddProduct3();}
+    /*@And("Click on: Toallas Higiénicas Ladysoft Básicas Sin Alas")
+    public void clickAddProduct3() {buyProductsPage.clickAddProduct3();}*/
 
     @And("Click on: Shopping cart")
     public void clickBtnCart() {buyProductsPage.clickBtnCart();}

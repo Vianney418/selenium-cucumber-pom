@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import utils.BaseDriverClass;
+import Utils.BaseDriverClass;
 
 // https://www.saucedemo.com/
 public class LoginPage extends BaseDriverClass {

@@ -1,8 +1,7 @@
-package definitions;
+package StepDefinitions;
 
 import java.time.Duration;
 import java.util.UUID;
-import java.util.concurrent.TimeUnit;
 
 import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
@@ -24,13 +23,13 @@ public class Hooks {
 
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver(chromeOptions.addArguments("--disable-notifications"));
+        driver = new ChromeDriver(chromeOptions.addArguments("--disable-notifications", "--headless"));
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
         driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
         driver.manage().deleteAllCookies();
         driver.manage().window().maximize();
-        //driver.get("https://www.saucedemo.com/");
+
     }
 
     @AfterStep
