@@ -15,14 +15,14 @@ public class BuyProductsPage extends BaseDriverClass {
     @FindBy(xpath = "//button[contains(@class,'new-header-search-submit')]")
     WebElement getBtnSearch;
 
-    @FindBy(xpath = "(//button[@aria-label='Agregar'][contains(.,'Agregar')])[1]")
+    @FindBy(xpath = "(//button[@aria-label='Agregar'][contains(.,'Agregar')])[3]")
     WebElement btnAdd1;
 
     @FindBy(xpath = "(//button[contains(@aria-label,'Agregar')])[6]")
     WebElement btnAdd2;
 
-    /*@FindBy(xpath = "(//button[@aria-label='Agregar'])[21]")
-    WebElement btnAdd3;*/
+    @FindBy(xpath = "(//button[@aria-label='Agregar'][contains(.,'Agregar')])[9]")
+    WebElement btnAdd3;
 
     @FindBy(xpath = "//i[@class='jumbo-icon-shopping-cart']")
     WebElement btnAddCart;
@@ -53,26 +53,21 @@ public class BuyProductsPage extends BaseDriverClass {
     }
 
     public void clickAddProduct1 (){
-//        try {
-//            Thread.sleep(5000);
-//        } catch (InterruptedException e) {
-//            throw new RuntimeException(e);
-//        }
         scrollToElement(btnAdd1);
         btnAdd1.click();
     }
 
     public void clickAddProduct2() {
-        scrollToElement(btnAdd2);
+         scrollToElement(btnAdd2);
         btnAdd2.click();
     }
 
-    /*public void clickAddProduct3() {
+    public void clickAddProduct3() {
         scrollToElement(btnAdd3);
         btnAdd3.click();
 
     }
-*/
+
     public void clickBtnCart(){
         btnAddCart.click();
     }

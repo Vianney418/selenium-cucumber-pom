@@ -35,8 +35,8 @@ public class BuyProductsStep {
     @And("Click on: Kotex ultra fine towels")
     public void clickAddProduct2() {buyProductsPage.clickAddProduct2();}
 
-    /*@And("Click on: Toallas Higiénicas Ladysoft Básicas Sin Alas")
-    public void clickAddProduct3() {buyProductsPage.clickAddProduct3();}*/
+    @And("Click on: Toallas Higiénicas Ladysoft Básicas Sin Alas")
+    public void clickAddProduct3() {buyProductsPage.clickAddProduct3();}
 
     @And("Click on: Shopping cart")
     public void clickBtnCart() {buyProductsPage.clickBtnCart();}

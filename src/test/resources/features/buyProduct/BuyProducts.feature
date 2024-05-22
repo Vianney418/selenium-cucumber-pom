@@ -9,7 +9,7 @@ Feature: Buy Products
     And Write on search "toallas higienicas"
     And Click on: Always night towels
     And Click on: Kotex ultra fine towels
-#    And Click on: Toallas Higiénicas Ladysoft Básicas Sin Alas
+    And Click on: Toallas Higiénicas Ladysoft Básicas Sin Alas
     And Click on: Shopping cart
     And 2 Click on: Plus button on Kotex ultra fine towels
     And Click on: Empty cart
